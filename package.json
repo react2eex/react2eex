@@ -1,0 +1,23 @@
+{
+  "name": "react2eex",
+  "version": "0.0.1",
+  "description": "Converts React page templates to Elixir EEX templates",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react2eex/react2eex.git"
+  },
+  "keywords": [
+    "react",
+    "eex",
+    "phoenix",
+    "elixir",
+    "templates"
+  ],
+  "author": "Doug Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react2eex/react2eex/issues"
+  },
+  "homepage": "https://github.com/react2eex/react2eex#readme"
+}
