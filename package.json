@@ -1,23 +1,41 @@
 {
   "name": "react2eex",
   "version": "0.0.1",
-  "description": "Converts React page templates to Elixir EEX templates",
-  "main": "index.js",
+  "description": "Compiles React page templates to Elixir EEX templates and optionally hydrates them",
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/react2eex/react2eex.git"
   },
-  "keywords": [
-    "react",
-    "eex",
-    "phoenix",
-    "elixir",
-    "templates"
-  ],
+  "keywords": ["react", "eex", "tsx", "phoenix", "elixir", "templates", "hydrate"],
   "author": "Doug Martin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/react2eex/react2eex/issues"
   },
-  "homepage": "https://github.com/react2eex/react2eex#readme"
+  "homepage": "https://github.com/react2eex/react2eex#readme",
+  "dependencies": {
+    "globby": "^11.0.0",
+    "json-schema": "^0.2.5",
+    "p-limit": "^2.2.2",
+    "schema-utils": "^2.6.5"
+  },
+  "devDependencies": {
+    "@types/json-schema": "^7.0.4",
+    "@types/node": "^13.9.3",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "typescript": "^3.8.3",
+    "webpack": "4.41.5"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "tslint -c tslint.json",
+    "lint:fix": "tslint -c tslint.json --fix 'src/**/*.{ts,tsx}'"
+  }
 }
